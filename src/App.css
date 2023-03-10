@@ -1,9 +1,36 @@
 body {
-  background-color: rgb(30, 33, 58);
+  background-color: #1e213a;
   font-family: Lato;
 }
 
 h2 {
   color: rgb(252, 245, 245);
   text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+  justify-content: center;
+  margin: auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+button,
+input[type="text"] {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  font-family: Lato;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+button {
+  background-color: #7C2E35;
+  border: none;
+  color: whitesmoke;
+  cursor: pointer;
 }
