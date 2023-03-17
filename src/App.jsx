@@ -15,7 +15,7 @@ function App() {
   }
 
   function getCityWeather() {
-fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?q=${input}&appid=977e8bc6d4594a2dad11cfaf7d63e7b3&units=metric`)
+fetch(`https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=${input}&appid=977e8bc6d4594a2dad11cfaf7d63e7b3&units=metric`)
   .then(res => res.json())
   .then(data => {
   getTheRenderData(data)
