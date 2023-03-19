@@ -113,9 +113,7 @@ button {
 
 /* other info */
 .other-info {
-  background-image: url("./assets/cover.jpg");
-  background-position: bottom;
-  background-size: cover;
+
   display: grid;
   width: 100vw;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -149,6 +147,9 @@ button {
 @media(max-width: 750px) {
   .other-info {
     grid-template-columns: 1fr 1fr;
+    background-image: url("./assets/cover2.jpg");
+    background-position: top;
+    background-size: cover;
   }
 }
 
