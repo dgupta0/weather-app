@@ -1,7 +1,16 @@
 export default function Today() {
-    const event = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    let today = event.toLocaleDateString(undefined, options)
 
+    const event = new Date()
+    const day = event.toLocaleString("en-us", {
+        weekday: "long"
+    })
+    const date = event.getDate()
+    const month = event.toLocaleString("en-us", {
+        month: "long"
+    })
+    const year = event.getFullYear()
+
+    let today = `${day}, ${date} ${month} ${year}`
+    console.log(today)
     return today
 }
